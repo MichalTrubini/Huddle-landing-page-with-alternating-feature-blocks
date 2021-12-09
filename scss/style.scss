@@ -1,5 +1,7 @@
 @import 'normalize','settings','variables';
 
+//TYPOGRAPHY START
+
 body {
     font-family: 'Open Sans', sans-serif;
     background: $background-body;
@@ -15,4 +17,204 @@ footer {
     background: $background-footer;
     color: $color-footer;
     text-align: left;
+}
+
+//TYPOGRAPHY END
+
+.header {
+    padding: 2.7rem 0 3.7rem;
+    background: url(../images/bg-hero-mobile.svg) no-repeat, #EDFBFF;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.6rem;
+    margin-bottom: 8rem;
+
+    &__logo {
+        width: 104px;
+    }
+
+    &__cta-link {
+        color: $color-heading;
+        font-size: 1rem;
+        font-weight: 700;
+        line-height: 1.3rem;
+        padding: 0.4rem 2.2rem 0.6rem;
+        background: $background-body;
+        box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.0954201);
+        border-radius: 12px;
+    }
+}
+
+.hero {
+    padding: 0 3.5rem;
+
+    &__heading {
+        font-size: 2.4rem;
+        line-height: 3.6rem;
+        margin-bottom: 2.4rem;
+    }
+
+    &__about {
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        margin-bottom: 3.2rem;
+    }
+
+    &__cta-link {
+        display: inline-block;
+        color: $White;
+        font-weight: 700;
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+        background: $background-button;
+        padding: 1rem 6rem 1.4rem;
+        box-shadow: 2px 3px 6px 1px rgba(255, 82, 193, 0.166185);
+        border-radius: 20px;
+        margin-bottom: 5.6rem;
+    }
+}
+
+.highlights {
+
+    padding: 5.9rem 2rem 0;
+
+    &__highlight {
+        box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.07);
+        border-radius: 16px;
+        padding: 2.4rem 4rem 3.3rem;
+        margin-bottom: 4rem;
+    }
+
+    &__highlight:last-child {
+        margin-bottom: 0;
+    }
+
+    &__image-container {
+        margin-bottom: 2.4rem;
+    }
+
+    &__heading {
+        font-size: 2rem;
+        line-height: 3rem;
+        margin-bottom: 1.6rem;
+    }
+
+    &__about {
+        font-size: 1.4rem;
+        line-height: 2.1rem;
+        color: $color-main;
+    }
+}
+
+.cta-box {
+    
+    padding: 3.3rem 1.2rem 2rem;
+    position: relative;
+    top: 88px;
+    z-index: 10;
+
+    &__container {
+        box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.0710768);
+        border-radius: 15px; 
+        padding: 4.1rem 1.2rem;
+        background: $background-body;
+    }
+    
+    &__heading {
+        font-size: 1.8rem;
+        line-height: 3rem;
+        margin-bottom: 2.4rem;
+    }
+    
+    &__link {
+        display: inline-block;
+        color: $White;
+        font-weight: 700;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        background: $background-button;
+        padding: 1.25rem 5rem;
+        box-shadow: 0px 3px 7px rgba(0, 37, 46, 0.223053);
+        border-radius: 20px;
+    }
+}
+
+
+.footer {
+    padding: 15rem 1.6rem 4.6rem;
+    font-size: 1.4rem;
+
+    &__logo {
+        width: 170px;
+        filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7429%) hue-rotate(127deg) brightness(101%) contrast(101%);
+        margin-bottom: 2.4rem;
+    }
+
+    &__icon {
+        height: 24px;
+    }
+
+    &__icon-container {
+        width: 24px;
+        height: 24px;
+        margin-right: 1.6rem;
+        flex-shrink: 0;
+    }
+
+    &__content {
+        line-height: 2.4rem;
+    }
+
+    &__container {
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: 2.4rem;
+    }
+
+    &__list-item {
+        margin-bottom: 1.6rem;
+        list-style: none;
+    }
+
+    &__link {
+        color: $color-footer;
+        line-height: 2.7rem;
+    }
+
+    &__links-container {
+        margin: 4.1rem 0 2.4rem;
+    }
+
+    &__social-block {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2.4rem;
+    }
+
+    &__social-link {
+        color: $color-footer;
+        width: 32px;
+        height: 32px;
+        border: 1px solid white;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 1.1rem;
+    }
+
+    &__social-link:last-child {
+        margin-right: 0;
+    }
+
+    &__copyright-container {
+        text-align: center;
+        font-size: 1.1rem;
+        line-height: 1.6rem;
+        font-family: 'Poppins', sans-serif;
+    }
 }
