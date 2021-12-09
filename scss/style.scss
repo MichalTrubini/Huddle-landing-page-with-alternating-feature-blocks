@@ -1,1 +1,18 @@
 @import 'normalize','settings','variables';
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: $background-body;
+    text-align: center;
+}
+
+h1, h2 {
+    font-family: 'Poppins', sans-serif;
+    color:$color-heading;
+}
+
+footer {
+    background: $background-footer;
+    color: $color-footer;
+    text-align: left;
+}

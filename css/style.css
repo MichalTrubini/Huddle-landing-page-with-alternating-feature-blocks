@@ -160,4 +160,21 @@ img {
 html {
   font-size: 62.5%;
 }
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: #fff;
+  text-align: center;
+}
+
+h1, h2 {
+  font-family: 'Poppins', sans-serif;
+  color: #00252e;
+}
+
+footer {
+  background: #00252e;
+  color: #fff;
+  text-align: left;
+}
 /*# sourceMappingURL=style.css.map */
