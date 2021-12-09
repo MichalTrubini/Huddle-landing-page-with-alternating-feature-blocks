@@ -83,10 +83,11 @@ footer {
     padding: 5.9rem 2rem 0;
 
     &__highlight {
+        max-width: 123.2rem;
         box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.07);
         border-radius: 16px;
         padding: 2.4rem 4rem 3.3rem;
-        margin-bottom: 4rem;
+        margin: 0 auto 4rem;
     }
 
     &__highlight:last-child {
@@ -95,6 +96,10 @@ footer {
 
     &__image-container {
         margin-bottom: 2.4rem;
+    }
+
+    &__image {
+        max-width: 44rem;
     }
 
     &__heading {
@@ -116,6 +121,9 @@ footer {
     position: relative;
     top: 88px;
     z-index: 10;
+    max-width: 50rem;
+    margin: auto;
+    text-align: center;
 
     &__container {
         box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.0710768);
@@ -173,6 +181,7 @@ footer {
         display: flex;
         justify-content: flex-start;
         margin-bottom: 2.4rem;
+        max-width: 37.9rem;
     }
 
     &__list-item {
@@ -216,5 +225,53 @@ footer {
         font-size: 1.1rem;
         line-height: 1.6rem;
         font-family: 'Poppins', sans-serif;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        text-align: left;
+    }
+
+    .nav {
+        margin-bottom: 7.1rem;
+
+        &__logo {
+            width: 20rem;
+        }
+
+        &__cta-link {
+            padding: 1.3rem 6.4rem 1.6rem;
+            font-size: 1.4rem;
+            line-height: 1.9rem;
+            box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.0954201);
+            border-radius: 2.4rem;
+        }
+    }
+
+    .hero {
+        display: flex;
+        justify-content: space-between;
+
+        &__content {
+            width: 46.2%;
+        }
+
+        &__image-container {
+            width: 47.2%;
+        }
+    }
+
+    .highlights {
+
+        &__highlight {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        &__highlight-reverse {
+            flex-direction: row-reverse;
+        }
     }
 }

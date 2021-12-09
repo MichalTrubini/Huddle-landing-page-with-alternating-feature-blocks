@@ -248,11 +248,12 @@ footer {
 }
 
 .highlights__highlight {
+  max-width: 123.2rem;
   -webkit-box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.07);
           box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.07);
   border-radius: 16px;
   padding: 2.4rem 4rem 3.3rem;
-  margin-bottom: 4rem;
+  margin: 0 auto 4rem;
 }
 
 .highlights__highlight:last-child {
@@ -261,6 +262,10 @@ footer {
 
 .highlights__image-container {
   margin-bottom: 2.4rem;
+}
+
+.highlights__image {
+  max-width: 44rem;
 }
 
 .highlights__heading {
@@ -280,6 +285,9 @@ footer {
   position: relative;
   top: 88px;
   z-index: 10;
+  max-width: 50rem;
+  margin: auto;
+  text-align: center;
 }
 
 .cta-box__container {
@@ -345,6 +353,7 @@ footer {
       -ms-flex-pack: start;
           justify-content: flex-start;
   margin-bottom: 2.4rem;
+  max-width: 37.9rem;
 }
 
 .footer__list-item {
@@ -398,5 +407,54 @@ footer {
   font-size: 1.1rem;
   line-height: 1.6rem;
   font-family: 'Poppins', sans-serif;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    text-align: left;
+  }
+  .nav {
+    margin-bottom: 7.1rem;
+  }
+  .nav__logo {
+    width: 20rem;
+  }
+  .nav__cta-link {
+    padding: 1.3rem 6.4rem 1.6rem;
+    font-size: 1.4rem;
+    line-height: 1.9rem;
+    -webkit-box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.0954201);
+            box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.0954201);
+    border-radius: 2.4rem;
+  }
+  .hero {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .hero__content {
+    width: 46.2%;
+  }
+  .hero__image-container {
+    width: 47.2%;
+  }
+  .highlights__highlight {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 1rem;
+  }
+  .highlights__highlight-reverse {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
 }
 /*# sourceMappingURL=style.css.map */
