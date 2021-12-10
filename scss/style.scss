@@ -21,6 +21,16 @@ footer {
 
 //TYPOGRAPHY END
 
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header, .main, .footer {
+    max-width: 144rem;
+}
+
 .header {
     padding: 2.7rem 0 3.7rem;
     background: url(../images/bg-hero-mobile.svg) no-repeat, #EDFBFF;
@@ -98,10 +108,6 @@ footer {
         margin-bottom: 2.4rem;
     }
 
-    &__image {
-        max-width: 44rem;
-    }
-
     &__heading {
         font-size: 2rem;
         line-height: 3rem;
@@ -155,6 +161,7 @@ footer {
 .footer {
     padding: 15rem 1.6rem 4.6rem;
     font-size: 1.4rem;
+    width: 100%;
 
     &__logo {
         width: 170px;
@@ -201,6 +208,7 @@ footer {
     &__social-block {
         display: flex;
         justify-content: center;
+        gap: 1.1rem;
         margin-bottom: 2.4rem;
     }
 
@@ -213,11 +221,6 @@ footer {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-right: 1.1rem;
-    }
-
-    &__social-link:last-child {
-        margin-right: 0;
     }
 
     &__copyright-container {
@@ -270,8 +273,215 @@ footer {
             gap: 1rem;
         }
 
+        &__image {
+            max-width: 44rem;
+        }
+
+        &__content {
+            max-width: 48.8rem;
+        }
+
         &__highlight-reverse {
             flex-direction: row-reverse;
+        }
+
+        &__image-container {
+            margin: 0;
+        }
+    }
+
+    .footer {
+
+        padding: 15rem 3.2rem 4.6rem;
+
+        &__content-wrapper {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 2rem;
+        }
+
+        &__links-container {
+            margin: 0;
+        }
+
+        &__social-block {
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+    }
+}
+
+@media screen and (min-width:1024px) {
+
+    .footer {
+
+        &__links-container {
+            display: flex;
+            gap: 13vw;
+        }
+
+        &__link:hover {
+            text-decoration: underline;
+        }
+
+        &__social-link:hover {
+            cursor: pointer;
+            color: $Pink;
+            border: 1px solid $Pink;
+        }
+    }
+
+    .hero {
+        &__cta-link:hover {
+            background: hsla(321, 100%, 80%, 1);
+        }
+    }
+
+    .cta-box {
+        &__link:hover {
+            background: hsla(321, 100%, 80%, 1);
+        }
+    }
+
+    .nav {
+        &__cta-link:hover {
+            color:hsla(208, 12%, 55%, 1)
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+
+    .main {
+        width: 100%;
+    }
+
+    .header {
+        padding: 6.8rem 8rem 7.2rem;
+        background: url(../images/bg-hero-desktop.svg) no-repeat, #EDFBFF;
+    }
+
+    .nav {
+        padding: 0;
+    }
+
+    .hero {
+        padding: 0;
+        align-items: center;
+        gap: 5.4rem;
+
+        &__content {
+            width: 53.6rem;
+        }
+
+        &__image-container {
+            width: 68rem;
+        }
+
+        &__heading {
+            font-size: 4rem;
+            line-height: 6rem;
+            margin-bottom: 3.2rem;
+        }
+
+        &__about {
+            font-size: 1.8rem;
+            line-height: 2.7rem;
+        }
+
+        &__cta-link {
+            font-size: 1.4rem;
+            line-height: 1.9rem;
+            box-shadow: 2px 3px 6px 1px rgba(255, 82, 193, 0.166185);
+            border-radius: 28px;
+            padding: 1.7rem 7rem 2rem;
+        }
+    }
+
+    .highlights {
+
+        padding: 16rem 0 0;
+
+        &__highlight {
+            padding: 5.3rem  0 5.3rem 12rem;
+            gap: 16.8rem;
+        }
+
+        &__heading {
+            font-size: 2.8rem;
+            line-height: 4.2rem; 
+        }
+
+        &__about {
+            font-size: 1.8rem;
+            line-height: 2.7rem; 
+        }
+    }
+
+    .cta-box {
+        padding: 0;
+        padding-top: 6.4rem;
+        max-width: 80rem;
+
+        &__container {
+            padding: 5.6rem 12.9rem 5.2rem;
+        }
+
+        &__heading {
+            font-size: 3.2rem;
+            line-height: 6rem;
+            margin-bottom: 3.2rem;
+        }
+
+        &__link {
+            font-size: 2rem;
+            line-height: 3rem;
+            box-shadow: 0px 6px 13px rgba(0, 37, 46, 0.223053);
+            border-radius: 40px;
+            padding: 2.5rem 10rem;
+        }
+    }
+
+    .footer {
+        padding: 14.4rem 7.8rem 6.4rem 12rem;
+
+        &__container {
+            margin-bottom: 1.6rem;
+        }
+
+        &__logo {
+            margin-bottom: 3rem;
+        }
+
+        &__container:last-child {
+            margin-bottom: 0;
+        }
+
+        &__content-wrapper {
+            justify-content: flex-start;
+        }
+
+        &__about {
+            margin-right: 13rem;
+        }
+
+        &__links-container {
+            gap: 14rem;
+            margin-right: 17.5rem;
+        }
+
+        &__social-block {
+            flex-direction: row;
+        }
+
+        &__copyright-container {
+            text-align: right;
+            font-size: 1.2rem;
+            line-height: 1.8rem;
+            position: relative;
+            top: -35px;
         }
     }
 }
