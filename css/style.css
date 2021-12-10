@@ -536,7 +536,7 @@ body {
     width: 100%;
   }
   .header {
-    padding: 6.8rem 8rem 7.2rem;
+    padding: 5.4rem 8rem 7.2rem;
     background: url(../images/bg-hero-desktop.svg) no-repeat, #EDFBFF;
   }
   .nav {
@@ -616,6 +616,7 @@ body {
   }
   .footer__logo {
     margin-bottom: 3rem;
+    width: 200px;
   }
   .footer__container:last-child {
     margin-bottom: 0;

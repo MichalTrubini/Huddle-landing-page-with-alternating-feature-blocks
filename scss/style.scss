@@ -359,7 +359,7 @@ body {
     }
 
     .header {
-        padding: 6.8rem 8rem 7.2rem;
+        padding: 5.4rem 8rem 7.2rem;
         background: url(../images/bg-hero-desktop.svg) no-repeat, #EDFBFF;
     }
 
@@ -453,6 +453,7 @@ body {
 
         &__logo {
             margin-bottom: 3rem;
+            width: 200px;
         }
 
         &__container:last-child {
